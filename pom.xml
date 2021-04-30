@@ -42,15 +42,15 @@
   </properties>
   <dependencies>
     <dependency>
+      <groupId>com.github.trickl</groupId>
+      <artifactId>model-trickl-finance</artifactId>
+      <version>0.0.5-SNAPSHOT</version>
+    </dependency>
+    <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.8</version>
       <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.trickl</groupId>
-      <artifactId>model-pricing</artifactId>
-      <version>0.1-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>io.projectreactor</groupId>	
@@ -125,6 +125,9 @@
                 </goals>
             </execution>
         </executions>
+        <configuration>
+          <detectJavaApiLink>false</detectJavaApiLink>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -195,7 +198,7 @@
           <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.1</version>
+            <version>0.8.4</version>
             <executions>
               <execution>
                 <id>prepare-agent</id>
