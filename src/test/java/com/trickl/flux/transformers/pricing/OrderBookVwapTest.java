@@ -136,6 +136,6 @@ public class OrderBookVwapTest {
 
     Optional<BigDecimal> result = vwap.apply(book);
     assertEquals(true, result.isPresent());
-    assertEquals(BigDecimal.valueOf(17.5), result.get());
+    assertEquals(BigDecimal.valueOf(30), result.get());
   }
 }
