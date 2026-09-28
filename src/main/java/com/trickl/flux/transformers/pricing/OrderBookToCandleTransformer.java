@@ -95,11 +95,6 @@ public class OrderBookToCandleTransformer
   }
 
   private void buildCandle(CandleBuilder candleBuilder, BigDecimal price, Instant time) {
-    candleBuilder
-      .open(price)
-      .high(price)
-      .low(price)
-      .close(price)
-      .time(time);
+    candleBuilder.open(price).high(price).low(price).close(price).time(time);
   }
 }
